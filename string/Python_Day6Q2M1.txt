@@ -1,0 +1,11 @@
+# In Python Strings are immutable.
+def is_palindrome(str):
+    new_str = ''
+    for i in reversed(range(len(str))):
+        new_str += str[i]
+    if str == new_str:
+        return True
+    return False
+
+
+print(is_palindrome('aab'))
